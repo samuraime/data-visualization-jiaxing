@@ -1,0 +1,40 @@
+html {
+  height: 100%;
+  font-family: 'PingFang SC', 'MicroSoft Yahei', sans-serif;
+}
+
+body {
+  min-height: 100%;
+  margin: 0;
+  background: radial-gradient(ellipse farthest-corner, #002c56 0%, #000 100%), #000;
+  /*overflow: hidden;*/
+  color: #fff;
+  line-height: 1;
+}
+
+#root {
+  min-height: 100%;
+  width: 1920px;
+  background: radial-gradient(ellipse closest-side, rgb(3, 80, 156) 0%, rgba(3, 80, 156, 0) 100%) no-repeat center top / 1000px 200px;
+  background-position-y: -100px;
+}
+
+a {
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+  outline: none;
+}
+
+.chart {
+  width: 100%;
+  height: 100%;
+}
+
+svg {
+  text {
+    fill: #fff;
+  }
+}

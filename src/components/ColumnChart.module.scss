@@ -1,0 +1,32 @@
+svg {
+  .arrow {
+    fill: none;
+    // stroke-width: 1.5;
+    stroke: #9da3b3;
+  }
+  .y {
+    text {
+      text-anchor: end;
+      font-size: 12px;
+    }
+  }
+  .bar {
+    transition: all 1s ease;
+  }
+  .xTicks {
+    .grid {
+      stroke: #2d4057;
+      stroke-width: 1.5px;
+    }
+    text {
+      text-anchor: middle;
+      // stroke: #8d9299;
+      font-size: 10px;
+    }
+  }
+  .yTick {
+    text-anchor: end;
+    font-size: 10px;
+    alignment-baseline: central;
+  }
+}

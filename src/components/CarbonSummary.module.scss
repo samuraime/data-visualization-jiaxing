@@ -1,0 +1,45 @@
+.chartContainer {
+  width: 870px;
+  height: 920px;
+  border: 1px solid #054db1;
+  .mapChart {
+    height: 640px;
+    // height: 525px;
+    .leftScale {
+      rect {
+        fill: url("#mapLinearChromatic");
+      }
+      text {
+        text-anchor: start;
+        font-size: 12px;
+      }
+    }
+    .mapItem {
+      .area {
+        transition: all .5s ease;
+        &:hover {
+          cursor: pointer;
+          filter: url(#outerLight);
+        }
+        &.active {
+          filter: url(#outerLight);
+          stroke: #fff;
+        }
+      }
+      text {
+        font-size: 10px;
+        text-anchor: middle;
+        cursor: pointer;
+        pointer-events: none;
+      }
+    }
+  }
+  .subCharts {
+    width: 100%;
+    display: block;
+    .subChart {
+      width: 50%;
+      display: inline-block;
+    }
+  }
+}

@@ -1,0 +1,85 @@
+.root {
+  width: 100%;
+  height: 100%;
+  & > header {
+    width: 100%;
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+    font-size: 32px;
+    & > div {
+      position: absolute;
+      top: 0;
+      right: 50px;
+      font-size: 20px;
+      float: right;
+    }
+  }
+  .slideContainer {
+    width: 100%;
+    overflow: hidden;
+    .slides {
+      position: relative;
+      left: 0;
+      top: 0;
+      transition: left 1s ease;
+      white-space: nowrap;
+      .tab {
+        position: relative;
+        display: inline-flex;
+        width: 100%;
+        justify-content: center;
+        vertical-align: top;
+      }
+    }
+  }
+  
+  .index {
+    & > div {
+      height: 100%;
+      &:nth-child(1), &:nth-child(3) {
+        width: 25.75%;
+        .top, .middle {
+          .barChart {
+            height: 230px;
+          }
+          .panelList {
+            height: 90px;
+          }
+        }
+      }
+      &:nth-child(2) {
+        width: 48.5%;
+        padding: 30px 30px 35px;
+        box-sizing: border-box;
+      }
+      &:nth-child(3) {
+        margin-left: -30px;
+      }
+    }
+  }
+  .carbon {
+    & > div {
+      height: 100%;
+      &:nth-child(1), &:nth-child(3) {
+        width: 25.75%;
+        .top, .middle {
+          .barChart {
+            height: 230px;
+          }
+          .panelList {
+            height: 90px;
+          }
+        }
+      }
+      &:nth-child(2) {
+        width: 48.5%;
+        padding: 30px 30px 35px;
+        box-sizing: border-box;
+      }
+      &:nth-child(3) {
+        margin-left: -30px;
+      }
+    }
+  }
+}

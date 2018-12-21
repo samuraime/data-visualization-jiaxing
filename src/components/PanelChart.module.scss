@@ -1,0 +1,32 @@
+.root {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  .label {
+    position: absolute;
+    left: 70%;
+    bottom: 80%;
+    display: inline-block;
+    padding: 5px 8px 6px;
+    border-radius: 6px;
+    color: #fff;
+    .pointer {
+      position: absolute;
+      display: inline-block;
+      width: 0;
+      height: 0;
+      right: 100%;
+      top: 100%;
+      border-top: 3px solid transparent;
+      border-bottom: 3px solid transparent;
+      border-right: 10px solid;
+      transform: translate(5px, -3px) rotate(-45deg);
+      transform-origin: 50% 50%;
+    }
+    .text {
+      font-size: 10px;
+    }
+  }
+  svg {
+  }
+}

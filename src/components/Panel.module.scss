@@ -1,0 +1,45 @@
+.root {
+  position: fixed;
+  width: 800px;
+  height: 120px;
+  left: 50%;
+  bottom: -2px;
+  transform: translateX(-50%);
+  & > div {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform: translateY(60%);
+    transition: transform .5s;
+    &:hover, &.hover {
+      transform: translateY(0);
+    }
+  }
+  .buttons {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 700px;
+    height: 80px;
+    transform: translateX(-50%);
+    button {
+      font-size: 20px;
+      padding: 0;
+      border: 0;
+      background: none;
+      color: #8199a8;
+      cursor: pointer;
+      width: 33.33%;
+      height: 100%;
+      line-height: 80px;
+      font-family: 'Microsoft Yahei';
+      transition: color .5s;
+      &.active {
+        color: #fff;
+      }
+      &:hover {
+        color: #fff;
+      }
+    }
+  }
+}

@@ -1,0 +1,91 @@
+.root {
+  display: inline-flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  & > div {
+    height: 100%;
+    &:nth-child(1), &:nth-child(3) {
+      width: 25.75%;
+      .top, .middle {
+        .barChart {
+          height: 230px;
+        }
+        .panelList {
+          height: 90px;
+        }
+      }
+    }
+    &:nth-child(2) {
+      width: 48.5%;
+      padding: 30px 30px 35px;
+      box-sizing: border-box;
+    }
+    &:nth-child(3) {
+      margin-left: -30px;
+    }
+  }
+  svg {
+    .mapItem {
+      .area {
+        transition: all .5s ease;
+        &:hover {
+          cursor: pointer;
+          filter: url(#outerLight);
+        }
+        &.active {
+          filter: url(#outerLight);
+          stroke: #fff;
+        }
+      }
+      text {
+        font-size: 10px;
+        text-anchor: middle;
+        alignmentBaseline: central;
+        cursor: pointer;
+        pointer-events: none;
+      }
+    }
+    .arrow {
+      fill: none;
+      // stroke-width: 1.5;
+      stroke: #9da3b3;
+    }
+    .y {
+      text {
+        text-anchor: end;
+        font-size: 12px;
+      }
+    }
+    .grid {
+      stroke: rgba(45, 64, 87, .3);
+      stroke-width: 1.5px;
+      pointer-events: none;
+      opacity: .5;
+    }
+    .bar {
+      transition: all 1s ease;
+    }
+    .xTicks {
+      text {
+        text-anchor: middle;
+        // stroke: #8d9299;
+        font-size: 10px;
+      }
+    }
+    .yTick {
+      text-anchor: end;
+      font-size: 10px;
+      alignment-baseline: central;
+    }
+  }
+
+  .subChart {
+    display: block;
+    width: 100%;
+    & > div{
+      width: 50%;
+      display: inline-block;
+    }
+  }
+}
